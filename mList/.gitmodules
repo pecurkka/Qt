@@ -1,0 +1,3 @@
+[submodule "Qt-AllLibs"]
+	path = Qt-AllLibs
+	url = git@github.com:MPREIS-WarenvertriebsGmbH/Qt-AllLibs.git

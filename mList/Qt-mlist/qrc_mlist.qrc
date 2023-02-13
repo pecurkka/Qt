@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/icon_add.png</file>
+        <file>resources/icon_edit.png</file>
+        <file>resources/icon_money.png</file>
+        <file>resources/icon_feedback_neutral.png</file>
+        <file>resources/icon_feedback_good.png</file>
+        <file>resources/icon_feedback_bad.png</file>
+        <file>resources/icon_close.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,975 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>981</width>
+    <height>742</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>981</width>
+    <height>742</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>981</width>
+    <height>742</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/resources/hafina_logo_oben.png</normaloff>:/resources/hafina_logo_oben.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>961</width>
+      <height>661</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab_users_konsum">
+     <attribute name="title">
+      <string>Benutzer/Konsum</string>
+     </attribute>
+     <widget class="QTreeWidget" name="tw_konsum">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>230</y>
+        <width>441</width>
+        <height>391</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <column>
+       <property name="text">
+        <string notr="true">1</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QLabel" name="lab_mitarb_count">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>600</y>
+        <width>281</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="BOW_Search" name="bow_search">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>600</y>
+        <width>200</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>200</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>200</width>
+        <height>23</height>
+       </size>
+      </property>
+      <property name="shortcut" stdset="0">
+       <string>Ctrl+F</string>
+      </property>
+     </widget>
+     <widget class="QTreeWidget" name="tw_personen">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>491</width>
+        <height>581</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <column>
+       <property name="text">
+        <string notr="true">1</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QFrame" name="frm_mitarbeiter">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>10</y>
+        <width>441</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="lab_vorname">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>32</y>
+         <width>59</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Vorname</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lab_nachname">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>72</y>
+         <width>161</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Nachname</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_vorname">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>10</y>
+         <width>341</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_nachname">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>421</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_email">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>90</y>
+         <width>391</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lab_email">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>112</y>
+         <width>161</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Email</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_persnr">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>71</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="maxLength">
+        <number>6</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lab_persnr">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>32</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PersonalNr.</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lab_boolaktiv">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>152</y>
+         <width>161</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Aktiv</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="cmb_bool_aktiv">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>130</y>
+         <width>131</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </widget>
+      <widget class="QWidget" name="wid_buttons" native="true">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>180</y>
+         <width>231</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <widget class="QPushButton" name="pb_save">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>0</y>
+          <width>111</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Speichern</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pb_cancel">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>111</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Verwerfen</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QPushButton" name="pb_at">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>90</y>
+         <width>21</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>@</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lab_kostenstelle">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>152</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Kostenstelle</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="cmb_kostenstelle">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>130</y>
+         <width>281</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_konsum_bericht">
+     <attribute name="title">
+      <string>Konsum Bericht</string>
+     </attribute>
+     <widget class="QTreeWidget" name="tw_konsum_bericht">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>941</width>
+        <height>611</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <column>
+       <property name="text">
+        <string notr="true">1</string>
+       </property>
+      </column>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_feedback">
+     <attribute name="title">
+      <string>Bewertung</string>
+     </attribute>
+     <widget class="QTreeWidget" name="tw_feedback">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>941</width>
+        <height>581</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <column>
+       <property name="text">
+        <string notr="true">1</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QLabel" name="lab_feedback_title">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>521</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Bewertung von Sauberkeit der Küche:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tabArtikeln">
+     <attribute name="title">
+      <string>Artikeln</string>
+     </attribute>
+     <widget class="QTreeWidget" name="tw_artikeln">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>941</width>
+        <height>351</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <column>
+       <property name="text">
+        <string notr="true">1</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QFrame" name="frm_artikeln">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>370</y>
+        <width>441</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLineEdit" name="le_artikel_bez">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>10</y>
+         <width>341</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lab_artikel_bez">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>32</y>
+         <width>131</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Bezeichnung</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_artikel_nr">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>71</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="maxLength">
+        <number>6</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pb_artikel_save">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>220</y>
+         <width>111</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Speichern</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pb_artikel_cancel">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>220</y>
+         <width>111</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Verwerfen</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lab_artikel_nr">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>32</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Artikelnr.</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="cmb_artikel_gruppe">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>341</width>
+         <height>23</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lab_gruppe">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Gruppe</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_priority">
+       <property name="geometry">
+        <rect>
+         <x>360</x>
+         <y>50</y>
+         <width>71</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="maxLength">
+        <number>6</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lab_priority">
+       <property name="geometry">
+        <rect>
+         <x>360</x>
+         <y>70</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Priority</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lab_preis">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>110</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Preis</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_preis">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>90</y>
+         <width>71</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="maxLength">
+        <number>6</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_ref_artikel">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>90</y>
+         <width>71</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="maxLength">
+        <number>6</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lab_ref_artikel">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>110</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Ref. Artikel</string>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>130</y>
+         <width>231</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Listung</string>
+       </property>
+       <widget class="QCheckBox" name="cb_it">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>30</y>
+          <width>61</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>IT</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="cb_technik">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>30</y>
+          <width>85</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Technik</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QComboBox" name="cmb_artikel_status">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>150</y>
+         <width>171</width>
+         <height>23</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lab_enabled">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>170</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Status</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lab_ref_artikel_bez">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>90</y>
+         <width>261</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lab_ref_artikel_bez_title">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>110</y>
+         <width>141</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Bezeichnung</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="BOW_Search" name="bow_search_artikel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>370</y>
+        <width>491</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>200</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>9999</width>
+        <height>23</height>
+       </size>
+      </property>
+      <property name="shortcut" stdset="0">
+       <string>Ctrl+F</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_artikel_neu">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>590</y>
+        <width>111</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Neu</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>981</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <addaction name="action_refresh"/>
+    <addaction name="separator"/>
+    <addaction name="action_close"/>
+   </widget>
+   <addaction name="menuMenu"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="floatable">
+    <bool>true</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="action_close">
+   <property name="text">
+    <string>Beenden</string>
+   </property>
+  </action>
+  <action name="action_refresh">
+   <property name="text">
+    <string>Aktualisieren</string>
+   </property>
+   <property name="shortcut">
+    <string>F5</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>BOW_Search</class>
+   <extends>QLineEdit</extends>
+   <header>bow_search.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>tw_personen</tabstop>
+  <tabstop>bow_search</tabstop>
+  <tabstop>le_persnr</tabstop>
+  <tabstop>le_vorname</tabstop>
+  <tabstop>le_nachname</tabstop>
+  <tabstop>le_email</tabstop>
+  <tabstop>pb_at</tabstop>
+  <tabstop>cmb_bool_aktiv</tabstop>
+  <tabstop>cmb_kostenstelle</tabstop>
+  <tabstop>pb_cancel</tabstop>
+  <tabstop>pb_save</tabstop>
+  <tabstop>tw_konsum</tabstop>
+  <tabstop>tw_konsum_bericht</tabstop>
+  <tabstop>tw_feedback</tabstop>
+  <tabstop>tw_artikeln</tabstop>
+  <tabstop>bow_search_artikel</tabstop>
+  <tabstop>le_artikel_nr</tabstop>
+  <tabstop>le_artikel_bez</tabstop>
+  <tabstop>cmb_artikel_gruppe</tabstop>
+  <tabstop>le_priority</tabstop>
+  <tabstop>le_preis</tabstop>
+  <tabstop>le_ref_artikel</tabstop>
+  <tabstop>cb_it</tabstop>
+  <tabstop>cb_technik</tabstop>
+  <tabstop>cmb_artikel_status</tabstop>
+  <tabstop>pb_artikel_neu</tabstop>
+  <tabstop>pb_artikel_cancel</tabstop>
+  <tabstop>pb_artikel_save</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
